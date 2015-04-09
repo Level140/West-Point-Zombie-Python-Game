@@ -4,6 +4,7 @@ class Enemy:
     
     xLoc = 0
     yLoc = 0
+    health = 100
 	
     def __init__(self):
         self.rect = pygame.Rect(0, 0, 50, 50)
