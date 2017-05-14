@@ -3,7 +3,7 @@ import player, enemy, mapx, pygame, sys, os
 bullets = []
 pygame.init()
 pygame.mouse.set_cursor(*pygame.cursors.broken_x)
-screen = pygame.display.set_mode((1400, 800),pygame.FULLSCREEN)
+screen = pygame.display.set_mode((1350, 750),pygame.FULLSCREEN)
 clock = pygame.time.Clock()
 
 player1 = player.Player()
@@ -12,7 +12,7 @@ enemy1 = enemy.Enemy()
 hold=mapx.Map()
 walls=hold.drawMap(1)
 #LOAD SOUND
-pygame.mixer.music.load('./sounds/background.mp3')
+pygame.mixer.music.load('./sounds/background.mp3') #http://www.freesfx.co.uk 
 pygame.mixer.music.play(-1)
 
 
